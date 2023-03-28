@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click here](https://github.com/Antonio0402/clipboard-landing-page-with-react)
+- Live Site URL: [Click here](https://clipboard-landing-page-with-react.netlify.app/)
 
 ## My process
 

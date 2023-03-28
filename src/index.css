@@ -12,7 +12,7 @@
     --dark-grayish-blue: 210deg 10% 33%;
 
     /* Font-family */
-    --ff-primary:  'Bai Jamjuree';
+    --ff-primary: "Bai Jamjuree";
 
     /* Font-size */
     --fs-900: 1.5rem; /* 24px */
@@ -24,66 +24,65 @@
     --fs-btn: 0.9375rem; /* 15px tracking-normal*/
     --fs-link: 0.75rem; /* 14px */
 
-  }
-
-  @screen sm {
-    :root {
-      --fs-900: 2.75rem; /* 44px */
-      --fs-800: 2.1875rem; /* 35px */
-      --fs-700: 1.4375rem; /* 23px */
-      --fs-600: 1.25rem; /* 20px tracking-normal-75 leading-normal*/
-      --fs-500: 1.125rem; /* 18px tracking-normal-75 leading-relaxed*/
-      --fs-400: 1rem; /* 16px tracking-normal-50 leading-7*/
-      --fs-btn: 1.125rem; /* 18px tracking-wide*/
-      --fs-link: 1.125rem; /* 18px */
+    @screen sm {
+      :root {
+        --fs-900: 2.75rem; /* 44px */
+        --fs-800: 2.1875rem; /* 35px */
+        --fs-700: 1.4375rem; /* 23px */
+        --fs-600: 1.25rem; /* 20px tracking-normal-75 leading-normal*/
+        --fs-500: 1.125rem; /* 18px tracking-normal-75 leading-relaxed*/
+        --fs-400: 1rem; /* 16px tracking-normal-50 leading-7*/
+        --fs-btn: 1.125rem; /* 18px tracking-wide*/
+        --fs-link: 1.125rem; /* 18px */
+      }
     }
   }
 }
 
 @layer components {
   .text-900 {
-    @apply text-[length:var(--fs-900)] sm:leading-none
+    @apply text-[length:var(--fs-900)] sm:leading-none;
   }
 
   .text-800 {
-    @apply text-[length:var(--fs-800)] tracking-normal-50 sm:tracking-normal
+    @apply text-[length:var(--fs-800)] tracking-normal-50 sm:tracking-normal;
   }
 
   .text-700 {
-    @apply text-[length:var(--fs-700)]
+    @apply text-[length:var(--fs-700)];
   }
 
   .text-600 {
-    @apply text-[length:var(--fs-600)] leading-relaxed tracking-wider-30 sm:tracking-normal-75
+    @apply text-[length:var(--fs-600)] leading-relaxed tracking-wider-30 sm:tracking-normal-75;
   }
   .text-500 {
-    @apply text-[length:var(--fs-500)] tracking-tight-75 leading-relaxed sm:tracking-normal-75
+    @apply text-[length:var(--fs-500)] leading-relaxed tracking-tight-75 sm:tracking-normal-75;
   }
 
   .text-400 {
-    @apply text-[length:var(--fs-400)] tracking-tight-100 leading-relaxed sm:tracking-normal-50 sm:leading-7
+    @apply text-[length:var(--fs-400)] leading-relaxed tracking-tight-100 sm:leading-7 sm:tracking-normal-50;
   }
   .text-btn {
-    @apply text-[length:var(--fs-btn)] tracking-normal sm:tracking-wide
+    @apply text-[length:var(--fs-btn)] tracking-normal sm:tracking-wide;
   }
   .text-link {
-    @apply text-[length:var(--fs-link)] tracking-normal
+    @apply text-[length:var(--fs-link)] tracking-normal;
   }
 
   .btn {
-    @apply text-btn font-semibold py-3 px-9 text-center rounded-full shadow-inner border-none
+    @apply text-btn rounded-full border-none py-3 px-9 text-center font-semibold shadow-inner;
   }
 
   .btn--download_ios {
-    @apply text-white bg-primary-dark shadow-primary-dark shadow hover:opacity-70
+    @apply bg-primary-dark text-white shadow shadow-primary-dark hover:opacity-70;
   }
   .btn--download_mac {
-    @apply text-white bg-primary-light shadow-primary-light shadow hover:opacity-70
+    @apply bg-primary-light text-white shadow shadow-primary-light hover:opacity-70;
   }
 }
 
 @layer utilities {
   .section-container {
-    @apply max-w-screen-xl px-5 mx-auto
+    @apply mx-auto max-w-screen-xl px-5;
   }
 }
