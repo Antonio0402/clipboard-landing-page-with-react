@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  :root {
+    /* Colors */
+    --primary-dark: 171deg 66% 44%;
+    --primary-light: 233deg 100% 69%;
+    --grayish-blue: 201deg 11% 66%;
+    --dark-grayish-blue: 210deg 10% 33%;
+
+    /* Font-family */
+    --ff-primary:  'Bai Jamjuree';
+
+    /* Font-size */
+    --fs-900: 1.5rem; /* 24px */
+    --fs-800: 1.3125rem; /* 21px tracking-normal-50 */
+    --fs-700: 1.125rem; /* 18px */
+    --fs-600: 0.75rem; /* 12px tracking-wide-30 leading-relaxed*/
+    --fs-500: 0.8125rem; /* 13px tracking-tight-75 leading-relaxed */
+    --fs-400: 0.8125rem; /* 13px tracking-tight-100 leading-relaxed */
+    --fs-btn: 0.9375rem; /* 15px tracking-normal*/
+    --fs-link: 0.75rem; /* 14px */
+
+  }
+
+  @screen sm {
+    :root {
+      --fs-900: 2.75rem; /* 44px */
+      --fs-800: 2.1875rem; /* 35px */
+      --fs-700: 1.4375rem; /* 23px */
+      --fs-600: 1.25rem; /* 20px tracking-normal-75 leading-normal*/
+      --fs-500: 1.125rem; /* 18px tracking-normal-75 leading-relaxed*/
+      --fs-400: 1rem; /* 16px tracking-normal-50 leading-7*/
+      --fs-btn: 1.125rem; /* 18px tracking-wide*/
+      --fs-link: 1.125rem; /* 18px */
+    }
+  }
+}
+
+@layer components {
+  .text-900 {
+    @apply text-[length:var(--fs-900)] sm:leading-none
+  }
+
+  .text-800 {
+    @apply text-[length:var(--fs-800)] tracking-normal-50 sm:tracking-normal
+  }
+
+  .text-700 {
+    @apply text-[length:var(--fs-700)]
+  }
+
+  .text-600 {
+    @apply text-[length:var(--fs-600)] leading-relaxed tracking-wider-30 sm:tracking-normal-75
+  }
+  .text-500 {
+    @apply text-[length:var(--fs-500)] tracking-tight-75 leading-relaxed sm:tracking-normal-75
+  }
+
+  .text-400 {
+    @apply text-[length:var(--fs-400)] tracking-tight-100 leading-relaxed sm:tracking-normal-50 sm:leading-7
+  }
+  .text-btn {
+    @apply text-[length:var(--fs-btn)] tracking-normal sm:tracking-wide
+  }
+  .text-link {
+    @apply text-[length:var(--fs-link)] tracking-normal
+  }
+
+  .btn {
+    @apply text-btn font-semibold py-3 px-9 text-center rounded-full shadow-inner border-none
+  }
+
+  .btn--download_ios {
+    @apply text-white bg-primary-dark shadow-primary-dark shadow hover:opacity-70
+  }
+  .btn--download_mac {
+    @apply text-white bg-primary-light shadow-primary-light shadow hover:opacity-70
+  }
+}
+
+@layer utilities {
+  .section-container {
+    @apply max-w-screen-xl px-5 mx-auto
+  }
+}
