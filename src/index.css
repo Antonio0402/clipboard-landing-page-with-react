@@ -23,18 +23,18 @@
     --fs-400: 0.8125rem; /* 13px tracking-tight-100 leading-relaxed */
     --fs-btn: 0.9375rem; /* 15px tracking-normal*/
     --fs-link: 0.75rem; /* 14px */
+  }
 
-    @screen sm {
-      :root {
-        --fs-900: 2.75rem; /* 44px */
-        --fs-800: 2.1875rem; /* 35px */
-        --fs-700: 1.4375rem; /* 23px */
-        --fs-600: 1.25rem; /* 20px tracking-normal-75 leading-normal*/
-        --fs-500: 1.125rem; /* 18px tracking-normal-75 leading-relaxed*/
-        --fs-400: 1rem; /* 16px tracking-normal-50 leading-7*/
-        --fs-btn: 1.125rem; /* 18px tracking-wide*/
-        --fs-link: 1.125rem; /* 18px */
-      }
+  @screen sm {
+    :root {
+      --fs-900: 2.75rem; /* 44px */
+      --fs-800: 2.1875rem; /* 35px */
+      --fs-700: 1.4375rem; /* 23px */
+      --fs-600: 1.25rem; /* 20px tracking-normal-75 leading-normal*/
+      --fs-500: 1.125rem; /* 18px tracking-normal-75 leading-relaxed*/
+      --fs-400: 1rem; /* 16px tracking-normal-50 leading-7*/
+      --fs-btn: 1.125rem; /* 18px tracking-wide*/
+      --fs-link: 1.125rem; /* 18px */
     }
   }
 }
